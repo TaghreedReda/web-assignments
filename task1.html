@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+html xmlns
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .square1 {
+            height: 200px;
+            width: 200px;
+            background-color: #000000;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .square2 {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: absolute;
+            left: 20px;
+            top: 40px;
+        }
+
+        .square3 {
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            position: absolute;
+            left: 50px;
+            top: 80px;
+        }
+
+        .parent {
+            margin-top: 350px;
+
+        }
+
+        .rec1 {
+            position: sticky;
+            width: 100%;
+            height: 30px;
+            background-color: gray;
+            border-width: 100%;
+            border-style: solid;
+            border-color: black;
+        }
+
+        .text1 {
+            margin-left: 60%;
+            position: absolute;
+        }
+
+        .rec2 {
+            position: fixed;
+            width: 40%;
+            height: 30px;
+            background-color: gray;
+            border-width: 100%;
+            border-style: solid;
+            border-color: black;
+        }
+
+        .text2 {
+
+            position: absolute;
+        }
+
+        .intro {
+            margin-top: 80px;
+        }
+
+        .rec3 {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            background-color: gray;
+            border-width: 100%;
+            border-style: solid;
+            border-color: red;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square1"></div>
+    <div class="square3">
+
+    </div>
+    <div class="square2">
+        <h4 align="center">this is div 2</h4>
+    </div>
+    <div class="parent">
+        <h4>
+            this is parent div
+        </h4>
+
+    </div>
+    <div class="rec1">
+        <div class="text1">
+            this is child div and it's sticky
+        </div>
+    </div>
+
+    <div class="rec2">
+        <div class="text2">
+            this is child div and it's fixed
+        </div>
+    </div>
+    <h2 class="intro">Introduction</h2>
+
+    <div class="rec3">
+        <div class="text2">
+            this is child div and it's relative
+        </div>
+    </div>
+    <div class="text2">
+       finished 
+    </div>
+</body>
+
+</html>
