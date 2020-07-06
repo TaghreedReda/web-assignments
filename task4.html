@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+function calculate(operator){
+var num1 ,num2,res;
+num1=Number(document.calculator.n1.value);
+num2=Number(document.calculator.n2.value);
+if (operator=="add"){
+res=num1+num2;
+document.calculator.result.value=res;
+}
+
+else if (operator=="sub"){
+res=num1-num2;
+document.calculator.result.value=res;
+}
+else if (operator=="mul"){
+res=num1*num2;
+document.calculator.result.value=res;
+}
+else if (operator=="div"){
+res=num1/num2;
+document.calculator.result.value=res;
+}
+else if (operator=="mod"){
+res=num1%num2;
+document.calculator.result.value=res;
+}
+}
+
+</script>
+
+</head>
+
+<body>
+<form name="calculator">
+    <label>view plainprint?</label></br></br>
+    Number 1 : <input type="text" name="n1"> </br> </br>
+    Number 2 : <input type="text" name="n2"> </br> </br>
+    <input type="button" value="ADD" onclick="calculate('add')">
+    <input type="button" value="SUB"  onclick="calculate('sub')">
+    <input type="button" value="MUL"  onclick="calculate('mul')">
+    <input type="button" value="DIV"  onclick="calculate('div')">
+    <input type="button" value="MOD" onclick="calculate('mod')"></br> </br>
+    Get Result : <input type="text" name="result"> 
+</form>
+
+</body>
+
+</html>
