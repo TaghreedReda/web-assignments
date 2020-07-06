@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+.home{
+ background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  font-size: large;
+  font-family: Helvetica, sans-serif;
+}
+.lists {
+width: 200px;
+height:600px;
+position: absolute;
+top:30px;  
+left:20px;
+background-color:white;
+}
+.lists>div{
+  color: rgb(34,81,128);
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 50px;
+  
+
+}
+.title{
+  font-weight: bold;
+  color: rgb(34,81,128);
+}
+
+.site{
+  height: 600px;
+  background-color:white;
+  left:230px;
+  top:30px; 
+  width:1000px; 
+  position:absolute;
+}
+.btn{
+  height: 30px;
+  color: white;
+  background-color: grey;
+  margin-top: 20px;
+  border: 0px;
+  width: 70px;
+  margin-left: 2px;
+  position: absoulute;
+  Display :inline-block;
+  text-align:center;
+  height: 30px;
+}
+.sbar{
+  height: 30px;
+  color: grey;
+  background-color: lightgrey;
+  margin-top: 20px;
+  width: 200px;
+  margin-left: 20px;
+  Display :inline-block;
+}
+.rec{
+  height: 30px;
+  color: grey;
+  background-color: lightgrey;
+  margin-top: 20px;
+  border: 0px;
+  position: absoulute;
+  width: 50px;
+  margin-left:10px;
+  Display :inline-block;
+}
+#blank
+{
+    width: 200px;
+    height: 150px;
+    background-color: gray;
+}
+#p1
+{
+
+    margin-top: 10%;
+    margin-left: 6%;
+    top: 0;
+    position: absolute;
+    font-size:large;
+}
+#p2
+{
+    margin-top: 10%;
+    margin-left: 40%;
+    top: 0;
+    position: absolute;
+    font-size:large;
+}
+#p3
+{
+    margin-top: 10%;
+    margin-left: 75%;
+    top: 0;
+    position: absolute;
+    font-size:large;
+}
+#btn_order
+{
+    background-color:mediumseagreen;  border: 0px; width: 200px; height: 30px;color: white; font-size:large;
+}
+.firstlist{
+
+}
+
+    </style>
+  </head>
+  <body>
+  <div class="home">
+
+    <div class="lists">
+      <div >
+        <div class=firstlist>
+          <label class="title">Type</label></br>
+          <br/> 
+          <input type="checkbox" id="all" name="all" value="all">
+          <label for="all">All</label><br>
+          <input type="checkbox" id="qualified" name="qualifiedProducts" value="qualified">
+          <label for="qualified">Qualified Products</label><br>
+          <input type="checkbox" id="medium" name="qualifiedProducts" value="">
+          <label for="medium">Medium Products</label><br>
+        </div>
+      <br/> 
+    
+      <div class=secondlist>
+        <label class="title">Category</label></br>
+        <br/> 
+        <input type="checkbox" id="category1" name="category1" value="category1">
+        <label for="category1">Category #1</label><br>
+        <input type="checkbox" id="category2" name="category2" value="category2">
+        <label for="category2">Category #2</label><br>
+        <input type="checkbox" id="category3" name="category3" value="category3">
+        <label for="category3">Category #3</label><br>
+        <input type="checkbox" id="category4" name="category4" value="category4">
+        <label for="category4">Category #4</label><br>
+        </div>
+  </div>
+
+</div>
+
+<div class="site">
+
+<div class="sbar">What do you want ?</div>
+<div class="btn" >Search</div>
+<label style="margin-left:80px;" class="title">Price:</label>
+<div class="rec" style="text-align: center;">to</div>
+<div class="rec" text align="center">from</div>
+<div class="btn" >Filter</div>
+<div id="p1">
+  <label style="color:rgb(9, 66, 66); font-size: large;"> Product name </label><br><br>
+  <div id="blank"></div>
+  <p style="color:rgb(9, 66, 66);">
+    Selection are all the exclusive <br>
+    content designed by our team. <br>
+    Additionally, if you are subscribed <br>
+    to our Premium account,when... <br>
+  </p>
+  <label style="color:rgb(9, 66, 66); font-size: large;"> 150 EGP </label> <br>
+  <button type="button" id="btn_order" ><i class="fa fa-shopping-cart" style="color: white; font-size: 20px;"></i> Order </button>
+</div>
+<div id="p2">
+    <label style="color:rgb(9, 66, 66); font-size: large;"> Product name </label><br><br>
+    <div id="blank"></div>
+    <p style="color:rgb(9, 66, 66);">
+      Selection are all the exclusive <br>
+      content designed by our team. <br>
+      Additionally, if you are subscribed <br>
+      to our Premium account,when... <br>
+    </p>
+    <label style="color:rgb(9, 66, 66); font-size: large; text-decoration: line-through; color: gray;"> 200 EGP </label> 
+    <label style="color:rgb(9, 66, 66); font-size: large;"> 150 EGP </label> <br>
+    <button type="button" id="btn_order" ><i class="fa fa-shopping-cart" style="color: white; font-size: 20px;"></i> Order </button>
+</div>
+<div id="p3">
+    <label style="color:rgb(9, 66, 66); font-size: large;"> Product name </label><br><br>
+    <div id="blank"></div>
+    <p style="color:rgb(9, 66, 66);">
+      Selection are all the exclusive <br>
+      content designed by our team. <br>
+      Additionally, if you are subscribed <br>
+    </p>
+    <label style="color:rgb(9, 66, 66); font-size: large;"> 150 EGP </label> <br>
+    <button type="button" id="btn_order"><i class="fa fa-shopping-cart" style="color: white; font-size: 20px;"></i> Order </button>
+</div>
+</div>
+
+
+</div>
+  </body>
+</html>
